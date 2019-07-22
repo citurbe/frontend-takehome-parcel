@@ -2,7 +2,14 @@ body {
   background: #eee;
   font-family: Georgia;
   margin: 0;
-  padding: 50px;
+}
+
+button:focus {
+  outline: none;
+}
+
+input:focus {
+  outline: none;
 }
 
 .big-lorem-ipsum {
@@ -10,4 +17,8 @@ body {
   font-weight: 300;
   margin: 0 auto;
   max-width: 15em;
+}
+
+.main-content {
+  margin-left: 2%;
 }

@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`List renders correctly 1`] = `
+<div>
+  <div
+    className="gem-card"
+  >
+    <a
+      href="http://test1.org"
+      target="blank"
+    >
+      gem 1
+    </a>
+    <p>
+      version: 
+      2.0
+    </p>
+    <button
+      className="save-button"
+      onClick={[Function]}
+    >
+      Save
+    </button>
+  </div>
+  <div
+    className="gem-card"
+  >
+    <a
+      href="http://test2.org"
+      target="blank"
+    >
+      gem 2
+    </a>
+    <p>
+      version: 
+      5.6
+    </p>
+    <button
+      className="save-button"
+      onClick={[Function]}
+    >
+      Un-Save
+    </button>
+  </div>
+  <div
+    className="gem-card"
+  >
+    <a
+      href="http://test3.org"
+      target="blank"
+    >
+      gem 3
+    </a>
+    <p>
+      version: 
+      1.9.2
+    </p>
+    <button
+      className="save-button"
+      onClick={[Function]}
+    >
+      Save
+    </button>
+  </div>
+</div>
+`;

@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`gem display renders correctly 1`] = `
+<div
+  className="gem-card"
+>
+  <a
+    href="http://fakeurl.com"
+    target="blank"
+  >
+    Test Gem
+  </a>
+  <p>
+    version: 
+    2.5
+  </p>
+  <button
+    className="save-button"
+    onClick={[Function]}
+  >
+    Save
+  </button>
+</div>
+`;

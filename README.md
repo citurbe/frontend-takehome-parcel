@@ -1,51 +1,27 @@
-# Teachable frontend takehome
+# Teachable frontend takehome for Craig Iturbe
 
-If you're reading this, you're likely a candidate for a frontend job at Teachable. You're going to be building a search application that takes a user's search query, hits the [Ruby Gems](https://rubygems.org/) search API endpoint, and displays the results in a list view with some added functionality (detailed below).
-
-The application, once completed, should meet the following criteria:
-
-1. It have a search box that lets users search for Ruby Gems.
-2. It should display the results of the search in a list.
-3. Each Gem should have a button that lets users "save" and "unsave" Gems.
-4. It should have a way to view saved Gems, even after the browser window is refreshed (localStorage is a fine for this).
-
-Here's a few things we'll look for in our evaluation.
-
-1. Clean, well-organized code.
-2. Sensisble architecture choices that could scale well.
-3. A clean, functioning UI.
-4. Bonus points if you write tests.
-
-## Getting started
-
-### Step 1: Fork this repo and clone it
-
-### Step 2: Install dependencies
-
-We have a few dependencies necessary to run the build and proxy server, the rest are up to you.
+To get this project up and running, type:
 
 ```bash
 npm install
 ```
 
-### Step 3: Start the development server
+Then type:
 
 ```bash
 npm run dev
 ```
 
-### Step 4: Start coding
-
-We want to judge your ability to program UIs, not configure build tools. That's why we chose [Parcel](https://parceljs.org/) as a bundler, please consult the [documentation](https://parceljs.org/getting_started.html) if you run into any trouble.
-
-We added a CSS file as an example, feel free to delete that.
-
-### Step 5: Network requests
-
-You may have noticed the server.js file at the root of this application, that's there to solve cross-origin issues when making network requests. The server automatically starts up when running "npm run dev" or "npm run start".
-
-To see a sample request in action, run the following in your command line.
+To run the test, type:
 
 ```bash
-curl http://localhost:3000/api/v1/search.json?query=rails
+npm run test
 ```
+
+### Some thoughts on the architecture
+
+For this project, I elected not to use Redux or any other state management package. The project is straightforward enough that React's component state is more than sufficient, and I like to avoid installing dependencies before I need them.
+
+I separated all of the api call functionality into a separate folder, and wrote a function to handle the api call itself. This is on the assumption that we might want to add more api functionality later, and so it made sense to abstract that functionality from the beginning (especially since it does not require any unneccessary dependencies).
+
+Pulling the function that handles saving and unsaving gems into a utility folder is probably not necessary for a project of this size. However, by separating the function from the React infrastructure, I was able to test it much more easily. This is important, since that function really represents most of the testable functionality of this App.

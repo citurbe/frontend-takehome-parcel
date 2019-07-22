@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Search renders correctly 1`] = `
+<div>
+  <input
+    className="search-box"
+    type="text"
+    value="test search text"
+  />
+   
+  <button
+    className="search-button"
+  >
+    Search
+  </button>
+  <button
+    className="search-button"
+  >
+    Show Saved
+  </button>
+</div>
+`;

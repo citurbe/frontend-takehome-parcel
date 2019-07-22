@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`header renders correctly 1`] = `
+<div
+  className="header"
+>
+  <h4>
+    Ruby Gems Search
+  </h4>
+</div>
+`;

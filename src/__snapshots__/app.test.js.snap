@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App display renders correctly 1`] = `
+<div>
+  <div
+    className="header"
+  >
+    <h4>
+      Ruby Gems Search
+    </h4>
+  </div>
+  <div
+    className="main-content"
+  >
+    <div>
+      <input
+        className="search-box"
+        onChange={[Function]}
+        type="text"
+        value=""
+      />
+       
+      <button
+        className="search-button"
+        onClick={[Function]}
+      >
+        Search
+      </button>
+      <button
+        className="search-button"
+        onClick={[Function]}
+      >
+        Show Saved
+      </button>
+    </div>
+    <div />
+  </div>
+</div>
+`;
